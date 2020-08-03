@@ -6,18 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+
     <?php
-        $nombre = "Dario" ; // crea la variable nombre con valor dario
-        $edad = 30 ; 
-        print "El nombre del usiuario es: $nombre <br>";
-        print "El nombre del usiuario es: " . $nombre;
-        print ' <br> El nombre del usiuario es: $nombre <br><br>' ;
+        echo "Este es el primer mensaje <br>" ;
+function dameDatos(){
+    echo "Este es el mensaje del interior de la funcion <br>" ;
 
-        print "El nombre del usiuario es: $nombre  $edad <br>";
-        print "El nombre del usiuario es: " . $nombre . $edad . " <br>";
-        print ' El nombre del usiuario es: $nombre $edad <br>';
+}
+dameDatos();
+dameDatos();
 
-        echo $nombre, $edad ; 
+        echo "Este es el primer mensaje <br>" ; 
     ?>
 
 
