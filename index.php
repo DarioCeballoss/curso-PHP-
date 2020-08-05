@@ -42,7 +42,19 @@
 		incrementar();
 		incrementar();
 		
+		echo "<br><br><br><br> STRINGS y css <br> ";
+		echo "<p style = 'color: red' >  hola </p>" ; // variar de comilla simple a comilla dobre cuando se usa dentro una dentro de otra
+		echo "<p style = \"color: blue\" >  hola </p>" ; //Tambien se puede usar la barra invertida como salto de caracter  
 		
+		echo "<br><br><br><br> COMPARACION DE STRINGS <br> ";
+			
+		$variable1="Casa";
+		$variable2="Casa";
+		//$resultado es un booleano
+		$resultado=strcmp($variable1,$variable2); //Compara si es igual, sin importar la mayusculas y minusculas
+		echo $resultado;
+		$resultado=strcasecmp($variable1,$variable2); // compara si es exactamente igual
+		echo $resultado;
     ?>
 
 
