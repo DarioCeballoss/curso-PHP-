@@ -28,7 +28,21 @@
         datosDeOtraHoja();
 
         echo "Este es el segundo mensaje <br>" ; 
-    
+		
+		
+
+		echo "<br><br><br><br> VARIABLES ESTATICAS <br> ";
+		
+		function incrementar(){
+			static $contador = 0; // sin el static la variable contador regresaria a 0 cada ves que se use la funcion "liena 41, 42, 43"
+			$contador ++;
+			echo $contador . "<br>";
+		}
+		incrementar();
+		incrementar();
+		incrementar();
+		
+		
     ?>
 
 
