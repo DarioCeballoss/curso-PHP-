@@ -49,12 +49,27 @@
 		echo "<br><br><br><br> COMPARACION DE STRINGS <br> ";
 			
 		$variable1="Casa";
-		$variable2="Casa";
+		$variable2="CASA";
 		//$resultado es un booleano
 		$resultado=strcmp($variable1,$variable2); //Compara si es igual, sin importar la mayusculas y minusculas
-		echo $resultado;
+		echo $resultado . "<br>"; //TRUE si no coinciden  "1"
+		
+		
+		
+		
+		function orden (){
+		global $resultado;
+		if($resultado){
+			echo "EL RESULTADO ES FALSO <br>";
+		}else{
+			echo "EL RESULTADO ES VERDADERO <br>";
+		}
+		
+		}
+		orden();
 		$resultado=strcasecmp($variable1,$variable2); // compara si es exactamente igual
-		echo $resultado;
+		echo $resultado . "<br>";
+		orden();
     ?>
 
 
