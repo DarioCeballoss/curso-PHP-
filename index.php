@@ -70,6 +70,26 @@
 		$resultado=strcasecmp($variable1,$variable2); // compara si es exactamente igual
 		echo $resultado . "<br>";
 		orden();
+		
+		echo "<br><br><br><br> CONSTANTES PROPIAS<br> ";
+		//NOMRE - VALOR - Boolean (sensible o no a mayusculas)
+		define("AUTOR","Dario" ); // CONSTANTES - -  Primero va el nombre de la constante y va todo en mayusculas - segundo va el valor de la constante - tercero 
+		echo AUTOR;
+		
+		
+		
+		echo "<br><br><br><br> CONSTANTES PREDEFINIDAS<br> ";
+		echo __LINE__  . "<br>" ;	// Línea actual en el fichero.
+		echo __FILE__ ;	// Ruta completa y nombre del fichero. Si se usa dentro de un include, devolverá el nombre del fichero del include.
+		
+		// hay mas constantes, estas dos son a modo de ejemplo.
+		
+		
+		
+		
+		
+		
+		
     ?>
 
 
