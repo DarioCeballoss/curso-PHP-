@@ -14,17 +14,7 @@
 		border:#666 5px solid;
 	}
 	
-	.no_validado{
-		font-size:18px;
-		color:#F00;
-		font-weight:bold;
-	}
-	
-	.validado{
-		font-size:18px;
-		color:#0C3;
-		font-weight:bold;
-	}
+
 
 
 </style>
@@ -33,7 +23,7 @@
 <body>
 <h1>USANDO OPERADORES COMPARACIÓN</h1>
 
-<form action="" method="post" name="datos_usuario" id="datos_usuario">
+<form action="validaDatos.php" method="post" name="datos_usuario" id="datos_usuario">
   <table width="15%" align="center">
     <tr>
       <td>Nombre:</td>
@@ -54,26 +44,6 @@
     </tr>
   </table>
 </form>
-<?php
-
-if(isset($_POST["enviando"])){
-	$usuario=$_POST["nombre_usuario"];
-	$edad=$_POST["edad_usuario"];
-	
-	if($usuario=="Dario" && $edad>20 ){
-		echo "<p class='validado' >puedes entrar</p>";
-	}else{
-		echo "<p class='no_validado'>no podes entrar</p>";
-	}
-	
-	
-	
-}
-
-
-
-?>
-
 
 </body>
 </html>
